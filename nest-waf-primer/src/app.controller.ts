@@ -11,19 +11,19 @@ export class AppController {
   }
 
   @Get('hello2')
-  @Render('views/index.html')
+  @Render('index.html')
   getHello2(): {message: string, title: string} {
     return this.appService.getHello2();
   }
 
-  @Get('home')
-  @Render('views/home.html')
+  @Get()
+  @Render('home.html')
   getHome(): {} {
     return this.appService.getHome();
     }
   
   @Get('about-us')
-  @Render('views/about-us.html')
+  @Render('about-us.html')
   getAboutUs(): {} {
     return this.appService.getAboutUs();
     }

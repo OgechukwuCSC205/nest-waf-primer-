@@ -25,6 +25,6 @@ nunjucks.configure(views, { express });
 const staticAssets = join(__dirname, '..', 'static');
 app.useStaticAssets(staticAssets);
 //start the application
-await app.listen(3000);
+await app.listen(3003);
 }
 bootstrap();
